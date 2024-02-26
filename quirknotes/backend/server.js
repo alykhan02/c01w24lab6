@@ -8,8 +8,9 @@ let mongoURL;
 if (process.env.ENV === 'Docker') {
   mongoURL = 'mongodb://mongodb:27017';
 } else {
-  mongoURL = 'mongodb://127.0.0.1:27017';const dbName = "quirknotes";
+  mongoURL = 'mongodb://127.0.0.1:27017';
 }
+const dbName = "quirknotes";
 
 // Connect to MongoDB
 let db;
